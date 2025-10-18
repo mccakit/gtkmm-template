@@ -1,0 +1,3 @@
+/home/mccakit/desktop/gtk_test/build/CMakeFiles/main.dir
+/home/mccakit/desktop/gtk_test/build/CMakeFiles/edit_cache.dir
+/home/mccakit/desktop/gtk_test/build/CMakeFiles/rebuild_cache.dir
