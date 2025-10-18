@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/mccakit/desktop/gtk_test/build/cmake_install.cmake"
+		"/home/mccakit/desktop/gtkmm-template/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
