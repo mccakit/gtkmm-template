@@ -1,3 +1,0 @@
-/home/mccakit/desktop/gtkmm-template/build/CMakeFiles/main.dir
-/home/mccakit/desktop/gtkmm-template/build/CMakeFiles/edit_cache.dir
-/home/mccakit/desktop/gtkmm-template/build/CMakeFiles/rebuild_cache.dir

@@ -1,8 +1,0 @@
-# ninja log v7
-5	1561	1760822187501359615	CMakeFiles/main.dir/main.cpp.o	cdc6257706475421
-1561	5005	1760822189057391100	main	ec5ea64ac05fcc27
-1	101	1760822924516444522	build.ninja	78cbee91725c2ac9
-1	101	1760822924514444496	/home/mccakit/desktop/gtkmm-template/build/cmake_install.cmake	78cbee91725c2ac9
-2	108	1760822924516444522	build.ninja	78cbee91725c2ac9
-2	108	1760822924516444522	/home/mccakit/desktop/gtkmm-template/build/cmake_install.cmake	78cbee91725c2ac9
-5	3805	1760822924549444949	main	c0f1bdb8f949bd0b
