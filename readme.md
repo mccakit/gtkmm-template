@@ -1,7 +1,12 @@
-- To build, 'source get-gtk.sh', then run cmake, then copy deps with python to a folder named lib, put the binary in the bin folder.
+EXAMPLE
 
-- To build gtkmm, first build gtk, then gtkmm then replace system libs until libstdc++ dependency is gone
+.. code-block:: bash
 
-- If you have issue with version mismatches, use -force-fallback-for option in meson
+   EXAMPLE
+   export PKG_CONFIG_LIBDIR="/home/mccakit/dev/dev-deps/native/share/pkgconfig:/home/mccakit/dev/dev-deps/native/lib/x86_64-linux-gnu/pkgconfig:/home/mccakit/dev/dev-deps/native/lib/pkgconfig:/home/mccakit/dev/dev-deps/native/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig"
+   export LD_LIBRARY_PATH="/home/mccakit/dev/libcxx/native/lib:/home/mccakit/dev/dev-deps/native/lib:/home/mccakit/dev/dev-deps/native/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
+   cmake -B build -G Ninja -DCMAKE_TOOLCHAIN_FILE=$HOME/dev/toolchains/native-shared.cmake
+   source $HOME/dev/pyvenv/bin/activate
+   python3 ./copy_deps.py ./build/main ./output
+   cp ./build/main ./output/bin/main
 
-- I recommend using the latest version of meson, and an llvm toolchain.
