@@ -792,10 +792,10 @@ if not os.path.exists("sassc"):
             "git@github.com:sass/sassc.git",
         ]
     )
-    os.chdir("libsass")
+    os.chdir("sassc")
     subprocess.run(["autoreconf", "-i"], check=True)
     subprocess.run(
-        "bash -c './configure --prefix=/home/mccakit/dev/dev-deps/native --enable-shared --disable-static && make -j11 && make install'",
+        "bash -c './configure --prefix=/home/mccakit/dev/dev-deps/native --with-libsass=/home/mccakit/dev/dev-deps/native --enable-shared --disable-static && make -j11 && make install'",
         shell=True,
         check=True,
     )

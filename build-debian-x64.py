@@ -706,7 +706,7 @@ if not os.path.exists("gdk-pixbuf"):
             "--shallow-submodules",
             "--depth",
             "1",
-            "git@github.com:mccakit/gdk-pixbuf.git",
+            "https://github.com/GNOME/gdk-pixbuf.git",
         ]
     )
     os.chdir("gdk-pixbuf")
@@ -793,7 +793,7 @@ if not os.path.exists("cairo"):
             "--shallow-submodules",
             "--depth",
             "1",
-            "git@gitlab.com:mccakit-group/cairo.git",
+            "https://gitlab.com/saiwp/cairo.git",
         ]
     )
     os.chdir("cairo")
@@ -805,7 +805,7 @@ if not os.path.exists("cairo"):
             "--native-file=/home/mccakit/dev/toolchains/native-meson-shared.ini",
             "--cross-file=/home/mccakit/dev/toolchains/debian-x64-meson-shared.ini",
             "--prefix=/home/mccakit/dev/dev-deps/debian-x64",
-            "-Dtests=disabled",
+            "-Dtests=disabled"
         ],
         check=True,
     )
@@ -1105,7 +1105,7 @@ if not os.path.exists("libusb"):
             "--shallow-submodules",
             "--depth",
             "1",
-            "https://github.com/mccakit/libusb.git",
+            "https://github.com/libusb/libusb.git",
         ]
     )
     os.chdir("libusb")
@@ -1166,7 +1166,7 @@ if not os.path.exists("util-linux"):
             "--native-file=/home/mccakit/dev/toolchains/native-meson-shared.ini",
             "--cross-file=/home/mccakit/dev/toolchains/debian-x64-meson-shared.ini",
             "--prefix=/home/mccakit/dev/dev-deps/debian-x64",
-            "-Dprogram-tests=false", "-Dbuild-python=disabled", "-Dncurses=disabled", "-Dncursesw=disabled", "-D--disable-all-programs"
+            "-Dbuild-libmount=enabled"
         ]
     )
     subprocess.run(["meson", "compile", "-C", "builddir"], check=True)
